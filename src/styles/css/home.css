@@ -1,0 +1,297 @@
+/*=============================================
+=        ESTILOS BASE Y FUENTES RETRO         =
+=============================================*/
+
+
+footer {
+  text-align: center;
+  color: white;
+}
+
+.fuente-pixel {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.neon-efecto {
+  text-shadow: 0 0 10px #1E90FF, 0 0 20px #39FF14;
+}
+
+
+/*=============================================
+=                 FONDOS                      =
+=============================================*/
+
+
+/* Fondo oscuro (modo gamer o pantalla principal) */
+.fondo-pantalla-oscuro {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* Fondo claro (modo alternativo) */
+.fondo-pantalla-claro {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* ocupa toda la pantalla */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* 🖼️ Fondo pantalla completa para sección principal */
+.banner-fondo { 
+  background-size: cover;          
+  background-position: center;     
+  background-repeat: no-repeat;    
+  width: 100vw;                    
+  height: 100vh;                  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;                   
+  text-shadow: 0 2px 5px rgba(0,0,0,0.6);
+}
+
+
+/*=============================================
+=              NAVBAR ESTILO GAMER            =
+=============================================*/
+
+/* === NAVBAR ESTILO GAMER CENTRADO === */
+.custom-navbar {
+  background: rgba(0, 0, 0, 0.8) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Links principales */
+.custom-navbar .nav-link {
+  color: #39FF14 !important; /* Verde neón */
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ffffff !important; /* Azul eléctrico */
+  text-shadow: 0 0 8px #1E90FF, 0 0 15px #39FF14;
+}
+
+/* Marca */
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link.disabled {
+  font-size: 14px;
+  color: #fff !important;
+  text-shadow: 0 0 6px #39FF14, 0 0 12px #1E90FF;
+}
+
+/* Dropdown */
+.custom-navbar .dropdown-menu {
+  background-color: #111;
+  border: 1px solid #39FF14;
+}
+
+.custom-navbar .dropdown-item {
+  color: #39FF14;
+  font-size: 11px;
+  transition: 0.3s;
+}
+
+.custom-navbar .dropdown-item:hover {
+  background-color: #1E90FF;
+  color: #fff;
+  text-shadow: 0 0 8px #39FF14;
+}
+
+/* Botón Search */
+.custom-navbar .btn-outline-success {
+  color: #39FF14;
+  border-color: #39FF14;
+  font-size: 11px;
+}
+
+.custom-navbar .btn-outline-success:hover {
+  background-color: #39FF14;
+  color: #000000;
+  text-shadow: 0 0 6px #1E90FF;
+}
+
+/* Botón Perfil */
+.btn-success {
+  background: linear-gradient(135deg, #28a745, #218838);
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn-success:hover {
+  background: linear-gradient(135deg, #218838, #28a745);
+  transform: translateY(-2px);
+}
+
+/* Icono carrito */
+.navbar .fa-shopping-cart {
+  color: #39FF14;
+  transition: transform 0.3s ease;
+}
+.navbar .fa-shopping-cart:hover {
+  transform: scale(1.3);
+  text-shadow: 0 0 10px #1E90FF, 0 0 15px #39FF14;
+}
+
+/* Badge neón */
+.navbar .badge {
+  font-size: 10px;
+  padding: 4px 6px;
+  box-shadow: 0 0 8px #39FF14, 0 0 12px #1E90FF;
+} 
+
+
+/*=============================================
+=                 CARRUSEL                    =
+=============================================*/
+
+/* Ajustar tamaño y estilo de las imágenes del slider */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Bordes suaves y sombra del carousel */
+#carouselExampleAutoplaying {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 15px;
+}
+
+
+/*=============================================
+=                TARJETAS (CARDS)             =
+=============================================*/
+
+/* Ajustar tamaño fijo de imágenes */
+.card-img-fixed {
+  height: 350px;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+/* Efecto hover en cards */
+.card-hover:hover .card-img-fixed {
+  filter: brightness(60%);
+  transform: scale(1.05);
+}
+
+/* Texto neón al pasar el mouse */
+.card-hover:hover .card-title,
+.card-hover:hover .card-text {
+  color: #fff;
+  text-shadow: 0 0 8px #1E90FF, 0 0 12px #39FF14;
+}
+
+
+/*=============================================
+=              CARD SOPORTE                   =
+=============================================*/
+
+.card-soporte {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-soporte:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagen con overlay al hover */
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container img {
+  transition: all 0.3s ease;
+}
+
+.card-soporte:hover .img-container img {
+  filter: brightness(70%);
+}
+
+/* Botón personalizado */
+.btn-soporte {
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #28a745, #218838);
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-soporte:hover {
+  background: linear-gradient(135deg, #218838, #28a745);
+  transform: translateY(-2px);
+}
+
+
+/*=============================================
+=              ICONOS SOCIALES                =
+=============================================*/
+
+.social-btn {
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.social-btn:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #fff;
+}
+
+
+/*=============================================
+=              CARRITO DE COMPRA              =
+=============================================*/
+
+.navbar .badge {
+  font-size: 10px;
+  padding: 4px 6px;
+  box-shadow: 0 0 8px #39FF14, 0 0 12px #1E90FF;
+}
+
+.navbar .fa-shopping-cart {
+  color: #39FF14;
+  transition: transform 0.3s ease;
+}
+
+.navbar .fa-shopping-cart:hover {
+  transform: scale(1.3);
+  text-shadow: 0 0 10px #1E90FF, 0 0 15px #39FF14;
+}
+
+
+/*=============================================
+=              LOGO CENTRADO                  =
+=============================================*/
+
+.logo-centrado {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}

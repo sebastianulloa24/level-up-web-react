@@ -2,6 +2,7 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import ImagenCarousel from './ImagenCarousel';
 
+
 function BannerInicio() {
     return (
         <Carousel className='text-center'>
@@ -15,15 +16,15 @@ function BannerInicio() {
             </Carousel.Item>
 
             <Carousel.Item>
-                <ImagenCarousel src="/asstes/imagenes/index/banner-RTX5060.jpg" alt="" />
+                <ImagenCarousel src="/assets/imagenes/index/banner-gamer.jpg" alt="" />
                 <Carousel.Caption>
                     <h3>Second slide label</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </Carousel.Caption>
-            </Carousel.Item>
+            </Carousel.Item>    
 
             <Carousel.Item>
-                <ImagenCarousel src='/imagenes/index/banner-RTX5060.jpg'/>
+                <ImagenCarousel src='/assets/imagenes/index/banner-RTX5060.jpg'/>
                 <Carousel.Caption>
                     <h3>Third slide label</h3>
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
