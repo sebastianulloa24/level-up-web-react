@@ -1,9 +1,9 @@
 import React from 'react'
 
 //Esta funcion para imagenes estaticas 
-function ImagenCarousel() {
+function ImagenCarousel({src,alt}) {
   return (
-    <img src='' alt=''/>
+    <img src={src} alt={alt}/>
   );
 }
 
@@ -13,10 +13,3 @@ export default ImagenCarousel
 
 // /public: para imagenes estaticas de las cuales no se cambiaran todo el tiempo
 // /src: para imagenes dinamicas y varias que cambiaran constantemente segun la necesidad 
-
-
-// function ImagenCarousel({src,alt}) {
-//   return (
-//     <img src={src} alt={alt}/>
-//   );
-// }

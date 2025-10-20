@@ -39,7 +39,7 @@ footer {
 
 .fondo-pantalla-claro {
 
-  background-image: url("../imagenes/fondos/gif-fondo-paisaje.gif");
+  background-image: url("/imagenes/fondos/gif-fondo-paisaje.gif");
   background-size: cover;
   background-size: cover;
   background-position: center;

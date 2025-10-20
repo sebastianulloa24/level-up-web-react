@@ -6,7 +6,7 @@ function BannerInicio() {
     return (
         <Carousel className='text-center'>
             <Carousel.Item>
-                <ImagenCarousel src="../assets/imagenes/index/banner-wukong.jpg"
+                <ImagenCarousel src="/assets/imagenes/index/banner-wukong.jpg"
                     alt="Banner juegos" />
                 <Carousel.Caption>
                     <h3>First slide label</h3>
@@ -15,7 +15,7 @@ function BannerInicio() {
             </Carousel.Item>
 
             <Carousel.Item>
-                <ImagenCarousel src="/assets/imagenes/index/banner-wukong.jpg" alt="" />
+                <ImagenCarousel src="/asstes/imagenes/index/banner-RTX5060.jpg" alt="" />
                 <Carousel.Caption>
                     <h3>Second slide label</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -23,7 +23,7 @@ function BannerInicio() {
             </Carousel.Item>
 
             <Carousel.Item>
-                <ImagenCarousel src='../assets/imagenes/index/banner-RTX5060.jpg'/>
+                <ImagenCarousel src='/imagenes/index/banner-RTX5060.jpg'/>
                 <Carousel.Caption>
                     <h3>Third slide label</h3>
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
