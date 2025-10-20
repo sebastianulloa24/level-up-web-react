@@ -1,0 +1,45 @@
+/* Fondo gamer */
+.fondo-pantalla-claro {
+  background-image: url("../imagenes/fondos/gif-fondo-paisaje.gif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fuente pixel */
+.fuente-pixel {
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* Texto neón */
+.neon-text {
+  color: #39FF14;
+  text-shadow: 0 0 5px #1E90FF, 0 0 10px #39FF14;
+}
+
+/* Estilo del card carrito */
+#carritocompra .card {
+  border-radius: 15px;
+  box-shadow: 0 0 15px #39FF14, 0 0 25px #1E90FF;
+}
+
+/* Imágenes de productos */
+#carritocompra img {
+  border: 2px solid #39FF14;
+  max-height: 80px;
+}
+
+/* Botón de checkout */
+.btn-outline-success {
+  border-width: 2px;
+  text-transform: uppercase;
+}
+
+.btn-outline-success:hover {
+  background: #39FF14;
+  color: black;
+  box-shadow: 0 0 10px #39FF14;
+}

@@ -1,0 +1,263 @@
+
+/*//////////////////////////////////CSS FIJOS//////////////////////////////////////////////////*/
+/*css fijos*/
+body {
+  padding-top: 70px;/* Ajusta según la altura del navbar */
+}
+
+footer {
+  text-align: center;
+  color: white;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////*/
+.fuente-pixel {
+
+  font-family: 'Press Start 2P', cursive;
+  /* Fuente pixel retro */
+
+}
+
+
+.neon-efecto {
+  text-shadow: 0 0 10px #1E90FF, 0 0 20px #39FF14;
+}
+
+/*//////////////////////////////////FONDO OSCURO/////////////////////////////////////////////////*/
+.fondo-pantalla-oscuro {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/fondos/gif-fondo-pacman.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  /* Para que el texto sea legible */
+}
+
+/*//////////////////////////////////FONDO claroO/////////////////////////////////////////////////*/
+
+.fondo-pantalla-claro {
+
+  background-image: url("../imagenes/fondos/gif-fondo-paisaje.gif");
+  background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;/* Fija el fondo al hacer scroll */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////*/
+.logo-centrado {
+  display: block;
+  /* convierte la imagen en bloque */
+  margin: 0 auto;
+  /* la centra horizontalmente */
+  width: 300px;
+  /* tamaño opcional */
+}
+
+/*/////////////////////////////CARRUSEL///////////////////////////////////////////////////////*/
+
+
+/* Ajustar tamaño de las imágenes del slider */
+.carousel-item img {
+  height: 400px;/* altura del banner (puedes subir/bajar el valor) */
+  object-fit: 200px;/* recorta la imagen sin deformarla */
+}
+
+/* Bordes suaves y sombra opcional */
+#carouselExampleAutoplaying {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 15px;/* espacio desde el navbar */
+}
+
+
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+  color: rgb(0, 0, 0) !important;
+
+  font-weight: bold;
+}
+
+.custom-navbar .nav-link:hover {
+  color: rgb(253, 253, 253) !important;/* Al pasar el mouse se vuelven blancas */
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////////////*/
+/* social iconos con efectos */
+
+.social-btn {
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.social-btn:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #fff;
+}
+
+/*/////////////////////////////////BARRA NAVBAR///////////////////////////////////////////////////*/
+
+
+/* === NAVBAR ESTILO GAMER === */
+.custom-navbar {
+  background: rgba(0, 0, 0, 0.7) !important;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 25px;
+  padding: 10px;
+  width: 80%;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
+  z-index: 1050;
+}
+
+.custom-navbar .nav-link {
+  color: #39FF14 !important;/* Verde neón */
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #1E90FF !important;/* Azul eléctrico en hover */
+  text-shadow: 0 0 8px #1E90FF, 0 0 15px #1E90FF;
+}
+
+.custom-navbar .navbar-brand {
+  font-size: 14px;
+  color: #fff;
+  text-shadow: 0 0 6px #39FF14, 0 0 12px #1E90FF;
+}
+
+.custom-navbar .dropdown-menu {
+  background-color: #111;
+  border: 1px solid #39FF14;
+}
+
+.custom-navbar .dropdown-item {
+  color: #39FF14;
+  font-size: 11px;
+}
+
+.custom-navbar .dropdown-item:hover {
+  background-color: #1E90FF;
+  color: #fff;
+  text-shadow: 0 0 8px #39FF14;
+}
+
+/* Botón Search */
+.custom-navbar .btn-outline-success {
+  color: #39FF14;
+  border-color: #39FF14;
+  font-size: 11px;
+}
+
+.custom-navbar .btn-outline-success:hover {
+  background-color: #39FF14;
+  color: #000000;
+  text-shadow: 0 0 6px #1E90FF;
+}
+
+
+/*/////////////////////////////////card imagenes///////////////////////////////////////////////////*/
+/* Ajustar todas las imágenes al mismo tamaño */
+.card-img-fixed {
+  height: 350px;
+  object-fit: cover;
+  transition: 0.5s ease; /* Transición suave */
+}
+
+/* Al pasar el mouse, oscurecer la imagen */
+.card-hover:hover .card-img-fixed {
+  filter: brightness(60%);
+  transform: scale(1.05); /* efecto zoom suave */
+}
+
+/* Transiciones para texto */
+.card-hover .card-title,
+.card-hover .card-text {
+  transition: 0.3s ease;
+}
+
+/* Al pasar el mouse, resaltar el texto */
+.card-hover:hover .card-title,
+.card-hover:hover .card-text {
+  color: #ffffff; /* Verde neón */
+  text-shadow: 0 0 8px #1E90FF, 0 0 12px #39FF14;
+}
+
+/*////////////////////////////7BOTON SOPORTE///////////////////////////////////////77*/
+.card-soporte {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-soporte:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagen con overlay al pasar el mouse */
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+.img-container img {
+    transition: all 0.3s ease;
+}
+.card-soporte:hover .img-container img {
+    filter: brightness(70%);
+}
+
+/* Título y texto resaltado al pasar el mouse */
+.card-soporte:hover .card-title,
+.card-soporte:hover .card-text {
+    color: #28a745; /* verde llamativo */
+}
+
+/* Botón personalizado */
+.btn-soporte {
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #28a745, #218838);
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.btn-soporte:hover {
+    background: linear-gradient(135deg, #218838, #28a745);
+    transform: translateY(-2px);
+}
+
+/*//////////////////CARRITO COMPRA///////////////77*/
+
+/* Badge neón para carrito */
+.navbar .badge {
+  font-size: 10px;
+  padding: 4px 6px;
+  box-shadow: 0 0 8px #39FF14, 0 0 12px #1E90FF;
+}
+.navbar .fa-shopping-cart {
+  color: #39FF14;
+  transition: transform 0.3s ease;
+}
+.navbar .fa-shopping-cart:hover {
+  transform: scale(1.3);
+  text-shadow: 0 0 10px #1E90FF, 0 0 15px #39FF14;
+}

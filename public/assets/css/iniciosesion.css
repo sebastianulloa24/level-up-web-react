@@ -1,0 +1,77 @@
+.fondo-pantalla-claro{
+  
+    background-image: url("../imagenes/iniciosesion/fondo-4.webp");
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fija el fondo al hacer scroll */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+
+
+/*barra de inicio de sesion*/
+/* Fondo general de la página */
+.fondo-iniciosesion {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Tarjeta de login */
+.login-card {
+  background: #ffffffcc; /* blanco semi-transparente */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  width: 350px;
+  text-align: center;
+}
+
+/* Título */
+.login-title {
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Grupo de botones */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Botones */
+.button-group .btn {
+  width: 48%;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.button-group .btn:hover {
+  transform: scale(1.05);
+}
+
+/*boton registrarse*/
+.register-group {
+  margin-top: 20px;
+  text-align: center; /* centra el botón */
+}
+
+.register-group .btn {
+  width: 60%;       /* más ancho que los otros botones */
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.register-group .btn:hover {
+  transform: scale(1.05);
+  background-color: #0066ff; /* azul más intenso al pasar el mouse */
+}
