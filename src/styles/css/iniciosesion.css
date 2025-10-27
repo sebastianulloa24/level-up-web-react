@@ -1,28 +1,4 @@
-.fondo-pantalla-claro{
-  
-    background-image: url("/");
-    background-size: cover;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Fija el fondo al hacer scroll */
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-}
 
-
-
-/*barra de inicio de sesion*/
-/* Fondo general de la página */
-.fondo-iniciosesion {
-  background: linear-gradient(135deg, #1f1c2c, #928dab);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
 
 /* Tarjeta de login */
 .login-card {

@@ -22,30 +22,9 @@ footer {
 =============================================*/
 
 
-/* Fondo oscuro (modo gamer o pantalla principal) */
-.fondo-pantalla-oscuro {
-  height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-}
-
-/* Fondo claro (modo alternativo) */
-.fondo-pantalla-claro {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh; /* ocupa toda la pantalla */
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 
-/* 🖼️ Fondo pantalla completa para sección principal */
+/*Fondo pantalla completa para sección principal */
 .banner-fondo { 
   background-size: cover;          
   background-position: center;     

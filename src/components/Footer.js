@@ -1,8 +1,9 @@
 import React from 'react'
 
+
 function Footer() {
   return (
-    <div className='text-center'>Todos los derechos reservados 2025</div>
+    <div className='text-center footer'>Todos los derechos reservados 2025</div>
   )
 }
 

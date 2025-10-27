@@ -2,11 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import fondo from '../../src/backgrounds/gif-fondo-paisaje.gif'
 
-// 2. NOMBRES DE COMPONENTES EMPIEZAN CON MAYÚSCULA
 function Registrarse() {
   return (
     // Usamos un div contenedor para el fondo y centrado
-    <div style={{ backgroundImage: `url(${fondo})`}} className='fondo-pantalla-claro'>
+    <div style={{
+          backgroundImage: `url(${fondo})`,
+          backgroundSize: 'cover',
+          minHeight: '100vh',
+          paddingTop: '80px'
+        }}>
+    
 
       <div className="register-container body-registrarse">
         <div className="register-card">
@@ -15,6 +20,7 @@ function Registrarse() {
           {/* 3. CAMBIAMOS "class" POR "className" */}
           <form id="registerForm" className="row g-3">
             <div className="col-md-6">
+
               {/* 4. LAS ETIQUETAS <input> DEBEN CERRARSE SOLAS (/>) */}
               <input type="text" className="form-control" id="firstName" placeholder="Nombre" required />
             </div>
@@ -36,7 +42,7 @@ function Registrarse() {
 
             <div className="col-12">
               <div className="form-check">
-                {/* 5. CAMBIAMOS "for" POR "htmlFor" */}
+
                 <input className="form-check-input" type="checkbox" id="terms" required />
                 <label className="form-check-label" htmlFor="terms">
                   Acepto los términos y condiciones
