@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import BannerInicio from '../components/Banner'
 import fondo from '../../src/backgrounds/gif-fondo-paisaje.gif'
-import Cards from '../components/Cards'
+import CardsList from '../components/CardsList'
 
 function Home() {
   return (
@@ -15,11 +15,12 @@ function Home() {
       paddingTop: '80px'
     }}>
 
-      <div className='col-lg-12'><BannerInicio />
+      <div className='col-lg-12'>
+        <BannerInicio />
       </div>
       <div className='row'>
         <div className='col-lg-12'>
-          <Cards />
+          <CardsList/>
         </div>
       </div>
       <Link to="/registrarse" className="btn btn-success btn-lg mt-3">
