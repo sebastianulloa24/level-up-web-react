@@ -1,68 +1,68 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-
-
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Button from 'react-bootstrap/Button';
+import { FaShoppingCart } from 'react-icons/fa';
+import '../styles/css/home.css';
 
 function NavBar() {
   return (
-    <div className='row'>
-      <nav className="navbar navbar-expand-lg custom-navbar fixed-top fuente-pixel" >
-        <div className=" navbar justify-content-center" id="navbarSupportedContent">
-          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link className="nav-link disabled" aria-disabled="true" to="/home"> LEVEL-UP</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/home">Iniciar sesión</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/registrarse">Registrarse</Link>
-            </li>
-            <li className="nav-item dropdown">
-              <Link className="nav-link dropdown-toggle" to="/#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Categorías
-              </Link>
-              <ul className="dropdown-menu">
-                <li><Link className="dropdown-item" to="/#">Componentes PC</Link></li>
-                <li><Link className="dropdown-item" to="/#">Accesorios y Periféricos</Link></li>
-                <li><Link className="dropdown-item" to="/#">Portátiles</Link></li>
-                <li><Link className="dropdown-item" to="/#">Monitores</Link></li>
-                <li><Link className="dropdown-item" to="/#">Desktop</Link></li>
-                <li><Link className="dropdown-item" to="/#">Servicios</Link></li>
-                <li><Link className="dropdown-item" to="/#">Ofertas c:</Link></li>
-                <li><Link className="dropdown-item" to="/#">Garantía SWOP+</Link></li>
-                <li><hr className="dropdown-divider" /></li>
-                <li><Link className="dropdown-item" to="/#">Juegos</Link></li>
-              </ul>
-            </li>
+    <Navbar expand="lg" className="custom-navbar" fixed='top'>
+      <Container>
+        {/* === LOGO O NOMBRE === */}
+        <Navbar.Brand as={Link} to="/home">
+          LEVEL APP
+        </Navbar.Brand>
 
-          </ul>
+        <Navbar.Toggle aria-controls="navbar-gamer" />
+        <Navbar.Collapse id="navbar-gamer">
+          <Nav className="me-auto">
+            <Nav.Link as={Link} to="/iniciarsesion">Iniciar Sesion</Nav.Link>
+            <Nav.Link as={Link} to="/registrarse">Registrarse</Nav.Link>
 
-          {/* Buscador */}
-          <form className="d-flex mx-3" role="search">
-            <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
-            <button className="btn btn-outline-success" type="submit">Search</button>
-          </form>
+            <NavDropdown title="Categorías" id="basic-nav-dropdown">
+              <NavDropdown.Item as={Link} to="/accion">Computadores y Tablets</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/aventura">Partes y Componentes</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/rpg">Gamer / Poder Grafico</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/accion">Accesorios y Prefisfericos</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/aventura">Monitores</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/rpg">Electronica y Robotica</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item as={Link} to="/ofertas">
+                Ofertas
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/productos">
+                Todos los productos
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
 
-          {/* Carrito */}
-          <ul className="nav-item position-relative">
-            <Link className="nav-link" to="/">
-              <i className="fas fa-shopping-cart fa-2x"></i>
-              <span className="badge bg-danger rounded-pill position top-0 start-100 translate-middle">
-                2
-              </span>
-            </Link>
-          </ul>
+          {/* === ÍCONOS Y BOTONES === */}
+          <Nav className="align-items-center">
+            <Nav.Link as={Link} to="/carritocompra">
+              <FaShoppingCart className="fa-shopping-cart" />
+              <span className="badge">3</span>
+            </Nav.Link>
 
-          {/* Perfil */}
-          <Link to="/perfilusuario" rel="noopener noreferrer">
-            <button type="button" className="btn btn-success ms-3">Perfil</button>
-          </Link>
-        </div>
-      </nav>
-    </div>
+            <Nav.Link as={Link} to="/perfil">
+              <Button variant="success" className="ms-2"> Perfil </Button>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
 export default NavBar;
+
+
+
+/*
+Se hace npm install react-icons para 
+
+
+*/

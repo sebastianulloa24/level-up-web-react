@@ -2,4 +2,5 @@
     width: 100%; /*ocupa todo el ancho de la card*/
     height: 200px; /*altura fija para que todas las imágenes sean iguales*/
     object-fit: cover; /*recorta proporcionalmente para no deformar*/
+    overflow: hidden; 
 }

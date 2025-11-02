@@ -1,13 +1,3 @@
-/* Fondo gamer */
-.fondo-pantalla-claro {
-  background-image: url("../imagenes/fondos/gif-fondo-paisaje.gif");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-}
 
 /* Fuente pixel */
 .fuente-pixel {

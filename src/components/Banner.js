@@ -1,13 +1,17 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import ImagenCarousel from './ImagenCarousel';
+// Import directo de las imágenes
+import bannerWukong from '../assets/imagenes/index/banner-Minecraft.jpg';
+import bannerGamer from '../assets/imagenes/index/banner-juegos.jpg';
+import bannerRTX from '../assets/imagenes/index/banner-gta-vl.jpg';
 
 
 function BannerInicio() {
     return (
-        <Carousel className='text-center'>
+        <Carousel className='banner-fullscreen text-center'>
             <Carousel.Item>
-                <ImagenCarousel src="/assets/imagenes/index/banner-wukong.jpg"
+                <ImagenCarousel src={bannerWukong}
                     alt="Banner juegos" />
                 <Carousel.Caption>
                     <h3>First slide label</h3>
@@ -16,15 +20,15 @@ function BannerInicio() {
             </Carousel.Item>
 
             <Carousel.Item>
-                <ImagenCarousel src="/assets/imagenes/index/banner-gamer.jpg" alt="" />
+                <ImagenCarousel src={bannerGamer }alt="" />
                 <Carousel.Caption>
                     <h3>Second slide label</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </Carousel.Caption>
-            </Carousel.Item>    
+            </Carousel.Item>
 
             <Carousel.Item>
-                <ImagenCarousel src='/assets/imagenes/index/banner-RTX5060.jpg'/>
+                <ImagenCarousel src={bannerRTX} alt="" />
                 <Carousel.Caption>
                     <h3>Third slide label</h3>
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>

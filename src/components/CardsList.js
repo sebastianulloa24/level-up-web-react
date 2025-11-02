@@ -13,52 +13,101 @@ function CardsList() {
   const cardsData = [
     {
       id: 1,
-      title: "RTX5060",
-      text: "Tarjeta gráfica de alto rendimiento ideal para gaming y diseño.",
+      title: "RTX 5060",
+      text: "Tarjeta gráfica de alto rendimiento ideal para gaming y diseño gráfico. Disfruta de los últimos juegos con máxima calidad visual.",
       image: RTX5060,
       buttonText: "Ir a comprar",
       link: "#"
     },
     {
       id: 2,
-      title: "",
-      text: "",
+      title: "League of Legends: Wukong",
+      text: "Vive la épica aventura de Wukong en esta versión de consola. Domina combates, resuelve acertijos y explora un mundo lleno de secretos y desafíos legendarios.",
       image: JuegoWukong,
       buttonText: "Ir a comprar",
       link: "#"
     },
     {
       id: 3,
-      title: "",
-      text: "",
+      title: "Elden Ring",
+      text: "Explora un vasto mundo abierto lleno de desafíos, combates épicos y aventuras inolvidables.",
       image: juegoElden,
       buttonText: "Ir a comprar",
       link: "#"
     },
     {
       id: 4,
-      title: "",
-      text: "",
+      title: "The Legend of Zelda: Breath of the Wild",
+      text: "Embárcate en una aventura épica en Hyrule, resolviendo acertijos y derrotando enemigos para salvar el reino.",
       image: juegoZelda,
       buttonText: "Ir a comprar",
       link: "#"
     },
     {
       id: 5,
-      title: "",
-      text: "",
+      title: "PlayStation 5",
+      text: "Consola de última generación con gráficos sorprendentes, almacenamiento ultrarrápido y compatibilidad con juegos exclusivos.",
       image: play5,
       buttonText: "Ir a comprar",
       link: "#"
     },
     {
       id: 6,
-      title: "",
-      text: "",
+      title: "Memoria RAM 16GB DDR4",
+      text: "Optimiza el rendimiento de tu PC con esta memoria RAM de alta velocidad, ideal para gaming y edición de video.",
       image: ram,
       buttonText: "Ir a comprar",
       link: "#"
     }
+    // ,
+    // {
+    //   id: 7,
+    //   title: "RTX5060",
+    //   text: "Tarjeta gráfica de alto rendimiento ideal para gaming y diseño.",
+    //   image: RTX5060,
+    //   buttonText: "Ir a comprar",
+    //   link: "#"
+    // },
+    // {
+    //   id: 8,
+    //   title: "",
+    //   text: "",
+    //   image: JuegoWukong,
+    //   buttonText: "Ir a comprar",
+    //   link: "#"
+    // },
+    // {
+    //   id: 9,
+    //   title: "",
+    //   text: "MANUEEEEEEEL GEI",
+    //   image: juegoElden,
+    //   buttonText: "Ir a comprar",
+    //   link: "#"
+    // },
+    // {
+    //   id: 10,
+    //   title: "",
+    //   text: "",
+    //   image: juegoZelda,
+    //   buttonText: "Ir a comprar",
+    //   link: "#"
+    // },
+    // {
+    //   id: 11,
+    //   title: "",
+    //   text: "",
+    //   image: play5,
+    //   buttonText: "Ir a comprar",
+    //   link: "#"
+    // },
+    // {
+    //   id: 12,
+    //   title: "",
+    //   text: "",
+    //   image: ram,
+    //   buttonText: "Ir a comprar",
+    //   link: "#"
+    // }
     // {
     //     id: 7,
     //     title: "",
@@ -75,10 +124,8 @@ function CardsList() {
     //     buttonText: "Ir a comprar",
     //     link: "#"
     // }
+    
   ]
-
-
-
   return (
     <div className="container">
       <div className="row text-center">
@@ -90,7 +137,7 @@ function CardsList() {
             image={card.image}
             buttonText={card.buttonText}
             link={card.link}
-            
+
           />
         ))}
       </div>

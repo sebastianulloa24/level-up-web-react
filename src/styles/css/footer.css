@@ -1,4 +1,72 @@
-.footer{
-    color: white;
-    background: rgb(151, 76, 76);
+/* =============================================
+=              FOOTER ESTILO GAMER              =
+============================================= */
+
+.footer-gamer {
+  background: rgba(0, 0, 0, 0.9);
+  color: #39FF14;
+  font-size: 13px;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.6);
+  padding-top: 30px;
+}
+
+/* Títulos */
+.footer-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1E90FF;
+  text-shadow: 0 0 6px #39FF14;
+  margin-bottom: 15px;
+}
+
+/* Texto y enlaces */
+.footer-gamer p {
+  color: #ccc;
+  font-size: 12px;
+}
+
+.footer-link {
+  color: #39FF14;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+  color: #1E90FF;
+  text-shadow: 0 0 8px #39FF14;
+}
+
+/* Contacto */
+.footer-contact li {
+  margin: 6px 0;
+}
+
+.footer-icon {
+  margin-right: 8px;
+  color: #1E90FF;
+}
+
+/* Redes sociales */
+.footer-social {
+  margin-top: 10px;
+}
+
+.social-link {
+  color: #39FF14;
+  margin-right: 10px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  color: #1E90FF;
+  text-shadow: 0 0 10px #39FF14;
+}
+
+/* Parte inferior */
+.footer-bottom {
+  background: #000;
+  font-size: 11px;
+  border-top: 1px solid #39FF14;
+  color: #39FF14;
 }

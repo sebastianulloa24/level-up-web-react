@@ -24,20 +24,6 @@ footer {
 
 
 
-/*Fondo pantalla completa para sección principal */
-.banner-fondo { 
-  background-size: cover;          
-  background-position: center;     
-  background-repeat: no-repeat;    
-  width: 100vw;                    
-  height: 100vh;                  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;                   
-  text-shadow: 0 2px 5px rgba(0,0,0,0.6);
-}
 
 
 /*=============================================
@@ -46,109 +32,143 @@ footer {
 
 /* === NAVBAR ESTILO GAMER CENTRADO === */
 .custom-navbar {
-  background: rgba(0, 0, 0, 0.8) !important;
+  background: rgba(0, 0, 0, 0.6); /* negro con opacidad */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px); /*desenfoca*/
 }
 
-/* Links principales */
-.custom-navbar .nav-link {
-  color: #39FF14 !important; /* Verde neón */
-  font-size: 12px;
+/* === Marca del sitio === */
+.custom-navbar .navbar-brand {
+  color: #39ff14 !important;
+  font-size: 1.1rem;
+  font-weight: bold;
   text-transform: uppercase;
+  text-shadow: 0 0 6px #39ff14, 0 0 12px #1e90ff;
   transition: all 0.3s ease-in-out;
 }
 
-.custom-navbar .nav-link:hover {
-  color: #ffffff !important; /* Azul eléctrico */
-  text-shadow: 0 0 8px #1E90FF, 0 0 15px #39FF14;
+.custom-navbar .navbar-brand:hover {
+  color: #ffffff !important;
+  text-shadow: 0 0 10px #39ff14, 0 0 20px #1e90ff;
 }
 
-/* Marca */
-.custom-navbar .navbar-brand,
-.custom-navbar .nav-link.disabled {
-  font-size: 14px;
-  color: #fff !important;
-  text-shadow: 0 0 6px #39FF14, 0 0 12px #1E90FF;
+/* === Links principales === */
+.custom-navbar .nav-link {
+  color: #39ff14 !important;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  margin: 0 8px;
 }
 
-/* Dropdown */
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: #ffffff !important;
+  text-shadow: 0 0 8px #1e90ff, 0 0 15px #39ff14;
+}
+
+/* === Dropdown === */
 .custom-navbar .dropdown-menu {
-  background-color: #111;
-  border: 1px solid #39FF14;
+  background-color: #0d0d0d;
+  border: 1px solid #39ff14;
+  border-radius: 8px;
+  margin-top: 8px;
 }
 
 .custom-navbar .dropdown-item {
-  color: #39FF14;
-  font-size: 11px;
+  color: #39ff14;
+  font-size: 12px;
+  padding: 8px 15px;
   transition: 0.3s;
 }
 
 .custom-navbar .dropdown-item:hover {
-  background-color: #1E90FF;
-  color: #fff;
-  text-shadow: 0 0 8px #39FF14;
+  background-color: #1e90ff;
+  color: #ffffff;
+  text-shadow: 0 0 8px #39ff14;
 }
 
-/* Botón Search */
+/* === Botón Buscar === */
 .custom-navbar .btn-outline-success {
-  color: #39FF14;
-  border-color: #39FF14;
-  font-size: 11px;
+  color: #39ff14;
+  border-color: #39ff14;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
 }
 
 .custom-navbar .btn-outline-success:hover {
-  background-color: #39FF14;
-  color: #000000;
-  text-shadow: 0 0 6px #1E90FF;
+  background-color: #39ff14;
+  color: #000;
+  text-shadow: 0 0 6px #1e90ff;
 }
 
-/* Botón Perfil */
+/* === Botón Perfil === */
 .btn-success {
   background: linear-gradient(135deg, #28a745, #218838);
   border: none;
   border-radius: 10px;
   font-weight: bold;
+  text-transform: uppercase;
+  padding: 6px 12px;
   transition: all 0.3s ease;
 }
+
 .btn-success:hover {
   background: linear-gradient(135deg, #218838, #28a745);
   transform: translateY(-2px);
 }
 
-/* Icono carrito */
-.navbar .fa-shopping-cart {
-  color: #39FF14;
-  transition: transform 0.3s ease;
-}
-.navbar .fa-shopping-cart:hover {
-  transform: scale(1.3);
-  text-shadow: 0 0 10px #1E90FF, 0 0 15px #39FF14;
+/* === Icono carrito === */
+.custom-navbar .fa-shopping-cart {
+  color: #39ff14;
+  font-size: 18px;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
-/* Badge neón */
-.navbar .badge {
+.custom-navbar .fa-shopping-cart:hover {
+  transform: scale(1.3);
+  text-shadow: 0 0 10px #1e90ff, 0 0 15px #39ff14;
+}
+
+/* === Badge neón === */
+.custom-navbar .badge {
   font-size: 10px;
   padding: 4px 6px;
-  box-shadow: 0 0 8px #39FF14, 0 0 12px #1E90FF;
-} 
+  box-shadow: 0 0 8px #39ff14, 0 0 12px #1e90ff;
+  background-color: #1e90ff;
+  color: #fff;
+  border-radius: 50%;
+}
+
 
 
 /*=============================================
 =                 CARRUSEL                    =
 =============================================*/
 
-/* Ajustar tamaño y estilo de las imágenes del slider */
-.carousel-item img {
-  height: 400px;
-  object-fit: cover;
+/* Banner full screen */
+.banner-fullscreen,
+.banner-fullscreen .carousel-inner,
+.banner-fullscreen .carousel-item {
+  width: 100vw;       /* 100% del ancho de la ventana */
+  height: 70vh;      /* 100% del alto de la ventana */
+  max-height: 100vh;  /* prevenir que se pase */
 }
 
-/* Bordes suaves y sombra del carousel */
-#carouselExampleAutoplaying {
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  margin-top: 15px;
+.banner-fullscreen .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* Mantiene la imagen centrada y recortada si es necesario */
+}
+
+/* Opcional: centrar captions verticalmente */
+.banner-fullscreen .carousel-caption {
+  bottom: 50%;
+  transform: translateY(100%);
 }
 
 

@@ -6,12 +6,12 @@ function Registrarse() {
   return (
     // Usamos un div contenedor para el fondo y centrado
     <div style={{
-          backgroundImage: `url(${fondo})`,
-          backgroundSize: 'cover',
-          minHeight: '100vh',
-          paddingTop: '80px'
-        }}>
-    
+      backgroundImage: `url(${fondo})`,
+      backgroundSize: 'cover',
+      minHeight: '100vh',
+      paddingTop: '80px'
+    }}>
+
 
       <div className="register-container body-registrarse">
         <div className="register-card">

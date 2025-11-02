@@ -1,7 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import BannerInicio from '../components/Banner'
-import fondo from '../../src/backgrounds/gif-fondo-paisaje.gif'
+import fondo from '../../src/backgrounds/fondo-nintendo.jpg'
 import CardsList from '../components/CardsList'
 
 function Home() {
@@ -23,9 +22,9 @@ function Home() {
           <CardsList/>
         </div>
       </div>
-      <Link to="/registrarse" className="btn btn-success btn-lg mt-3">
+      {/* <Link to="/registrarse" className="btn btn-success btn-lg mt-3">
         ¡Regístrate Ahora!
-      </Link>
+      </Link> */}
     </div>
 
 
