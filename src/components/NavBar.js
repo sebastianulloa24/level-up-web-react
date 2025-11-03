@@ -20,18 +20,18 @@ function NavBar() {
         <Navbar.Toggle aria-controls="navbar-gamer" />
         <Navbar.Collapse id="navbar-gamer">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/iniciarsesion">Iniciar Sesion</Nav.Link>
+            <Nav.Link as={Link} to="/iniciosesion">Iniciar Sesion</Nav.Link>
             <Nav.Link as={Link} to="/registrarse">Registrarse</Nav.Link>
 
             <NavDropdown title="Categorías" id="basic-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/accion">Computadores y Tablets</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/aventura">Partes y Componentes</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/rpg">Gamer / Poder Grafico</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/accion">Accesorios y Prefisfericos</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/aventura">Monitores</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/rpg">Electronica y Robotica</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Productos">Computadores y Tablets</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Productos">Partes y Componentes</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Productos">Gamer / Poder Grafico</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Productos">Accesorios y Prefisfericos</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Productos">Monitores</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Productos">Electronica y Robotica</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item as={Link} to="/ofertas">
+              <NavDropdown.Item as={Link} to="/Productos">
                 Ofertas
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/productos">
@@ -44,7 +44,7 @@ function NavBar() {
           <Nav className="align-items-center">
             <Nav.Link as={Link} to="/carritocompra">
               <FaShoppingCart className="fa-shopping-cart" />
-              <span className="badge">3</span>
+              <span className="badge">0</span>
             </Nav.Link>
 
             <Nav.Link as={Link} to="/perfil">

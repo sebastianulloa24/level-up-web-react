@@ -7,6 +7,10 @@ import imgPlayStation5 from '../../assets/imagenes/ProductosTienda/PlayStation_5
 import imgPCGamer from '../../assets/imagenes/ProductosTienda/PC Gamer ASUS ROG Strix.jpg'
 import imgSilla from '../../assets/imagenes/ProductosTienda/Silla Gamer Secretlab Titan.webp'
 import imgMouse from '../../assets/imagenes/ProductosTienda/Mouse Gamer Logitech G502 HERO.jpg'
+import imgMousePad from '../../assets/imagenes/ProductosTienda/Mousepad Razer.webp'
+import imgPolera from '../../assets/imagenes/ProductosTienda/Polera Gamer Personalizada.jpg'
+import imgAuriculares from '../../assets/imagenes/ProductosTienda/Auriculares Gamer HyperX Cloud II.webp'
+
 
 
 function ProductosList() {
@@ -33,7 +37,7 @@ function ProductosList() {
       valorProducto: 59990
     },
     { 
-      // image:imgAuriculares,
+      image:imgAuriculares,
       idProducto: "AC002",
       nombreProducto: "Auriculares Gamer HyperX Cloud II",
       categoriaProducto: "Accesorios",
@@ -68,14 +72,14 @@ function ProductosList() {
       valorProducto: 49990
     },
     { 
-      // image:imgMousePad,
+      image:imgMousePad,
       idProducto: "MP001",
       nombreProducto: "Mousepad Razer Goliathus Extended Chroma",
       categoriaProducto: "Mousepad",
       valorProducto: 29990
     },
     { 
-      // image:imgPolera,
+      image:imgPolera,
       idProducto: "PP001",
       nombreProducto: "Polera Gamer Personalizada 'Level-Up'",
       categoriaProducto: "Poleras Personalizadas",
@@ -84,7 +88,7 @@ function ProductosList() {
   ];
 
   return (
-      <div className="container">
+      <div className="cards-container">
         <div className="row justify-content-center">
           {productosData.map((producto) => (
             <div key={producto.id} className="col-lg-4 col-md-6 mb-4">

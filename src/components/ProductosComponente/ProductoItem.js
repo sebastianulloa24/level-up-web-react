@@ -1,9 +1,11 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
+import '../../styles/css/productos.css'
+
 
 function ProductoItem({image,idProducto, nombreProducto, categoriaProducto, valorProducto}) {
   return (
-    <Card>
+    <Card className='card img'>
       <Card.Body>
         <Card.Img variant="top" src={image} />
         <Card.Title>codigo:{idProducto}</Card.Title>
@@ -13,12 +15,24 @@ function ProductoItem({image,idProducto, nombreProducto, categoriaProducto, valo
           bulk of the card's content.
         </Card.Text>
         <Card.Subtitle className="mb-2 text-muted">{categoriaProducto}</Card.Subtitle>
-        <Card.Subtitle className="mb-2 text-muted">${valorProducto}</Card.Subtitle>
-        <Card.Link href="#">Card Link</Card.Link>
-        <Card.Link href="#">Another Link</Card.Link>
+        <Card.Subtitle className="mb-2 text-muted">${valorProducto.toLocaleString('es-CL')}</Card.Subtitle>
+        <Card.Link href="#">Comprar</Card.Link>
+        <Card.Link href="#">Agregar al Carrito</Card.Link>
       </Card.Body>
     </Card>
   )
 }
 
 export default ProductoItem
+
+
+/*
+muestra el valor de valorProducto formateado según el estilo chileno (con puntos de miles).
+Ejemplo: si valorProducto = 59990, se verá como 59.990 en la tabla.
+En resumen:
+
+${...} → inserta el valor en el HTML.
+
+.toLocaleString('es-CL') → da formato numérico local (Chile).
+
+*/

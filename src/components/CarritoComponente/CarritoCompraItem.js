@@ -10,9 +10,21 @@ function CarritoCompraItem({ idProducto, nombreProducto, categoriaProducto, valo
       <td>{nombreProducto}</td>
       <td>{categoriaProducto}</td>
       {/* 4. se puede formatear el valor */}
+
       <td>${valorProducto.toLocaleString('es-CL')}</td>
     </tr>
   );
 }
 
 export default CarritoCompraItem;
+
+/*
+muestra el valor de valorProducto formateado según el estilo chileno (con puntos de miles).
+Ejemplo: si valorProducto = 59990, se verá como 59.990 en la tabla.
+En resumen:
+
+${...} → inserta el valor en el HTML.
+
+.toLocaleString('es-CL') → da formato numérico local (Chile).
+
+*/

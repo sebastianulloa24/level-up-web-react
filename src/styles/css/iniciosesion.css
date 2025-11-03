@@ -1,53 +1,16 @@
 
-
-/* Tarjeta de login */
-.login-card {
-  background: #ffffffcc; /* blanco semi-transparente */
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  width: 350px;
-  text-align: center;
+/* Ajustes de la tarjeta */
+.ajuste-card {
+  width: 22rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 10px;
+  transition: transform 0.2s ease;
 }
 
-/* Título */
-.login-title {
-  margin-bottom: 30px;
-  font-weight: bold;
-  color: #333;
+/* Efecto hover suave */
+.ajuste-card:hover {
+  transform: translateY(-5px);
 }
 
-/* Grupo de botones */
-.button-group {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-/* Botones */
-.button-group .btn {
-  width: 48%;
-  font-weight: bold;
-  transition: transform 0.2s;
-}
-
-.button-group .btn:hover {
-  transform: scale(1.05);
-}
-
-/*boton registrarse*/
-.register-group {
-  margin-top: 20px;
-  text-align: center; /* centra el botón */
-}
-
-.register-group .btn {
-  width: 60%;       /* más ancho que los otros botones */
-  font-weight: bold;
-  transition: transform 0.2s;
-}
-
-.register-group .btn:hover {
-  transform: scale(1.05);
-  background-color: #0066ff; /* azul más intenso al pasar el mouse */
-}

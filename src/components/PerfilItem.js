@@ -9,8 +9,8 @@ function PerfilItem({ imagePerfil, nombreUsuario, nombre, apellido, fecha_nacimi
         {/* Mostrar la imagen del perfil */}
         <Card.Img variant="top" src={imagePerfil} />
         <Card.Body>
+          <h6 className='text-center'>nombre de perfil</h6>
           <h5><Card.Title className='text-center'>{nombreUsuario}</Card.Title></h5>
-          <h5 className='text-center'>nombre de perfil</h5>
         </Card.Body>
         <ListGroup className="list-group-flush">
           <ListGroup.Item>Nombre: {nombre}</ListGroup.Item>

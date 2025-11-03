@@ -1,5 +1,6 @@
 import React from 'react'
 import fondo from '../backgrounds/gif-fondo-paisaje.gif'
+import CarritoCompraList from '../components/CarritoComponente/CarritoCompraList'
 
 
 
@@ -16,7 +17,7 @@ function CarritoCompra() {
 
     <div className='container'>
       <div className='row col-lg-12'>
-        
+        <CarritoCompraList/>
       </div>
     </div>
     
