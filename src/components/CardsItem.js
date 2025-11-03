@@ -7,8 +7,8 @@ import '../styles/css/cards.css';
 function CardItem({title, text, image, buttonText, link}) {
   return (
     <div className='col-lg-4 mt-3 ' >
-      <Card>
-        <Card.Img variant="top" src={image} alt={title} className='ajuste-cards'/>  
+      <Card className='ajuste-cards '>
+        <Card.Img variant="top" src={image} alt={title}/>  
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>{text}</Card.Text>

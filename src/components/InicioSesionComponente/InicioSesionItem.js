@@ -6,8 +6,8 @@ import '../../styles/css/iniciosesion.css'
 
 function InicioSesionItem() {
     return (
-        <div>
-            <Card className='ajuste-card'>
+        <div className='ajuste-card'>
+            <Card>
                 <Card.Img
                     variant="top"
                     src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png"

@@ -44,7 +44,7 @@ function NavBar() {
           <Nav className="align-items-center">
             <Nav.Link as={Link} to="/carritocompra">
               <FaShoppingCart className="fa-shopping-cart" />
-              <span className="badge">0</span>
+              <span className="badge">2</span>
             </Nav.Link>
 
             <Nav.Link as={Link} to="/perfil">

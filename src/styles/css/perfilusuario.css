@@ -5,10 +5,9 @@
   color: #fff;
   border-radius: 1rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-  
-  padding: 2rem; /* Espacio interno correcto */
+  padding: 1rem; /* Espacio interno correcto */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
   margin: 0 auto;
   text-align: center;
+  width: 400px;
 }

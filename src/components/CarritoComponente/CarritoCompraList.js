@@ -8,13 +8,15 @@ function CarritoCompraList() {
             idProducto: 'JM001',
             nombreProducto: 'Catan',
             categoriaProducto: 'Juegos de Mesa',
-            valorProducto: 29990
+            valorProducto: 29990,
+            cantidadProducto: 1
         },
         {
             idProducto: 'AC001',
             nombreProducto: 'Control Xbox',
             categoriaProducto: 'Accesorios',
-            valorProducto: 59990
+            valorProducto: (59990 * 2),
+            cantidadProducto: 2
         },
     ];
 
@@ -26,7 +28,9 @@ function CarritoCompraList() {
                         <th>Código</th>
                         <th>Producto</th>
                         <th>Categoría</th>
+                        <th>Cantidad</th>
                         <th>Valor</th>
+
                     </tr>
                 </thead>
                 <tbody>

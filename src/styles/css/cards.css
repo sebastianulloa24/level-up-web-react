@@ -1,6 +1,13 @@
 .ajuste-cards {
-    width: 100%; /*ocupa todo el ancho de la card*/
-    height: 200px; /*altura fija para que todas las imágenes sean iguales*/
-    object-fit: cover; /*recorta proporcionalmente para no deformar*/
-    overflow: hidden; 
+    width: 100%;                 /* ocupa todo el ancho de la card */
+    height: 200px;               /* altura uniforme para todas las imágenes */
+    object-fit: cover;           /* recorta proporcionalmente sin deformar */
+    overflow: hidden;            /* evita que la imagen sobresalga */
+    border-radius: 12px;         /* bordes redondeados para suavizar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* sombra suave sobre fondo negro */
+    transition: transform 0.3s ease; /* efecto suave al hover */
+}
+
+.ajuste-cards:hover {
+    transform: scale(1.05); /* leve zoom al pasar el mouse */
 }
