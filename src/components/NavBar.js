@@ -13,7 +13,7 @@ function NavBar() {
     <Navbar expand="lg" className="custom-navbar" fixed='top'>
       <Container>
         {/* === LOGO O NOMBRE === */}
-        <Navbar.Brand as={Link} to="/home">
+        <Navbar.Brand as={Link} to="/">
           LEVEL APP
         </Navbar.Brand>
 

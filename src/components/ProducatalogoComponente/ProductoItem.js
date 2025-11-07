@@ -17,7 +17,7 @@ function ProductoItem({image,idProducto, nombreProducto, categoriaProducto, valo
         <Card.Subtitle className="mb-2 text-muted">{categoriaProducto}</Card.Subtitle>
         <Card.Subtitle className="mb-2 text-muted">${valorProducto.toLocaleString('es-CL')}</Card.Subtitle>
         <Card.Link href="#">Comprar</Card.Link>
-        <Card.Link href="#">Agregar al Carrito</Card.Link>
+        <Card.Link href="/carritocompra">Agregar al Carrito</Card.Link>
       </Card.Body>
     </Card>
   )

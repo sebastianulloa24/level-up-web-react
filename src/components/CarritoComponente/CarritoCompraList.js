@@ -30,6 +30,7 @@ function CarritoCompraList() {
                         <th>Categoría</th>
                         <th>Cantidad</th>
                         <th>Valor</th>
+                        
 
                     </tr>
                 </thead>

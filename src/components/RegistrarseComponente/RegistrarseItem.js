@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import '../../styles/css/registrarse.css'
+import { Link } from 'react-router-dom';
 
 function RegistrarseItem() {
   return (
@@ -47,12 +48,13 @@ function RegistrarseItem() {
 
             {/* Botones alineados lado a lado */}
             <div className="d-flex justify-content-center gap-3 mt-4">
-              <Button variant="success">
+              <Button as={Link} to="/" variant="success">
                 Registrarse
               </Button>
-              <Button variant="secondary">
-                Volver al Lobby
+              <Button as={Link} to="/" variant="secondary">
+                Volver al Home
               </Button>
+              
             </div>
           </Form>
         </Card.Body>

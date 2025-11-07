@@ -26,7 +26,6 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
           <Route path="/registrarse" element={<Registrarse />} />
           <Route path="/iniciosesion" element={<Iniciosesion />} />
           <Route path="/carritoCompra" element={<CarrtitoCompra />} />
